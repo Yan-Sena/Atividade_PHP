@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário - POST</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+
+
+        #Container {
+            padding: 2%;
+            text-align: left;
+            background-color: lightblue;
+            border: 3px solid black;
+            width: 100%;
+            height: 2000px;
+        }
+
+        button{
+
+            border: 2px solid black;
+            padding: 10px;
+            margin-left: 1.5%;
+
+        }
+
+        .cad{
+
+            margin: 1.5%;
+            padding: 1%;
+            border: 2px solid black;
+
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+
+<div id="Container">
+<!--primeiro--->
+<h2><b>Formulário - Calculos </b></h2>
+
+    <form name="calculos" method="get" action="receber_dados.php" style="background-color: whitesmoke;" class="cad">
+        
+        <img src="Imgens/retangulo.png"> Digite os valores dos lados do retângulo: <br><br>
+       <p><b>Digite o valor da altura:</b></p> 
+        <textarea name="val1" cols="20" rows="2"></textarea>
+        
+            <p><b>Digite o valor da base:</b></p>
+         <textarea name="val2" cols="20" rows="2"></textarea>
+        <br><br>
+
+        <input type="submit" name="Enviar"> <br>
+
+
+        
+    </form> <br><br>
+
+    <!--Atividade 2-->
+
+    <h2><b>Formulário - IMC </b></h2>
+
+    <form name="imc" method="get" action="receber_imc.php" style="background-color: whitesmoke;" class="cad">
+        
+        <img src="Imgens/imc.png"> Digite os dados: <br><br>
+       <p><b>Digite o valor da altura:</b></p> 
+        <textarea name="alt" cols="20" rows="2"></textarea>
+        
+            <p><b>Digite o valor do peso:</b></p>
+         <textarea name="pes" cols="20" rows="2"></textarea>
+        <br><br>
+
+        <input type="submit" name="Enviar"> <br>
+
+
+        
+    </form>
+<br>
+    <!--Atividade 3-->
+
+ <h2><b>Formulário - Login </b></h2>
+
+ <form name="login" method="post" action="receber_login.php" style="background-color: whitesmoke;" class="cad">
+     
+     Digite os dados: <br><br>
+    
+     <img src="Imgens/login.png"> <b>Digite seu nome:</b><br><br>
+     <textarea name="log" cols="80" rows="2"></textarea> <br><br>
+     
+     <img src="Imgens/password.png"> Digite sua senha: <br><br>
+     <input type="text" name="senh">
+     <br><br>
+ 
+     <input type="submit" name="Enviar"> <br>
+ 
+ 
+     
+ </form><br>
+
+ <h2><b>Formulário - Avaliação </b></h2> 
+
+ <form name="avaliacao" method="post" action="receber_avaliacao.php" style="background-color: whitesmoke;" class="cad"> 
+    
+    <img src="Imgens/option.png"> <b> Oque você achou do site??</b> <br><br>
+    <input type="radio" name="mb" value="Muito Bom"> Muito Bom &nbsp;
+    <input type="radio" name="b" value="Bom"> Bom &nbsp;
+    <input type="radio" name="r" value="Regular"> Regular &nbsp;
+
+    <br><br>
+
+    <img src="Imgens/gostar.png"><b>&nbsp; Qual seção você mais gostou?</b> <br><br>
+
+    <select name="secao">
+        <option value="EC">Em Cartaz</option>
+        <option value="CL">Catálogo</option>       
+       </select> <br><br>
+       <b>Outro: </b> <br>
+     <textarea name="catalog" cols="20" rows="1"></textarea> <br><br><br>
+
+
+     <img src="Imgens/mensagem.png"><b> Digite aqui seus comentários:</b><br>
+         <textarea name="comentari" cols="80" rows="7"></textarea> <br><br>
+
+
+         <img src="Imgens/option.png"> <b> Diga-nos como entrar em contato com você:</b> <br><br>
+
+         <b>Nome:</b> <input type="text" name="nom"><br><br>
+         <b>E-Mail:</b> <input type="text" name="ema"><br><br>
+         <b>Fone:</b> <input type="text" name="fon"><br><br>
+
+
+
+
+        
+        
+         <input type="checkbox" name="opf">
+         <label> Quero receber as novidades do site por e-mail</label>
+        <br> <br>
+
+
+         <input type="submit" name="ED" value="Enviar Dados"> &nbsp;&nbsp; <input type="reset" name="LF" value="Limpar Formulário">
+    
+
+
+
+
+
+
+
+
+   
+
+
+    
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+</div> <!--Container--->
+</body>
+</html>
